@@ -1,0 +1,32 @@
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a href="index.html" class="header__logo">MARCHENKO</a>
+        <div class="header__search-bar">
+          <input type="text" id="search-bar" placeholder="What can I help you with today?">
+          <a href="#"><img class="search-icon"
+                           src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+        </div>
+        <button id="btn" (click)="onCreate()" data-modal-target="#modal">LOG IN</button>
+
+        <div id="overlay"></div>
+      </div>
+    </div>
+  </div>
+  <div class="header__list">
+    <div class="container">
+      <div class="header__list-inner">
+        <ul class="header__ul">
+          <li class="header__li"><a href="index.html" class="header__a">MAIN</a></li>
+          <li class="header__li stroke__line">|</li>
+          <li class="header__li"><a href="#" class="header__a">BOOKS</a></li>
+          <li class="header__li stroke__line">|</li>
+          <li class="header__li"><a href="#" class="header__a">YOUTUBE</a></li>
+          <li class="header__li stroke__line">|</li>
+          <li class="header__li"><button id="li_btn" data-modal-target="#modal">ACCOUNT</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

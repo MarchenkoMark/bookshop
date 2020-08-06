@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+ul, li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color:#a1a1a1;
+  line-height: 19px;
+  font-size: 31px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.3s;
+  margin-top: 15px;
+  max-height: 62px;
+}
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+body{
+  background-color: #40c4b4;
+}
+
+.merch{
+  min-height: 700px;
+  background-color: white;
+}
+.merch__items{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.merch__item{
+  border: 2px solid #e4e4e4;
+  min-width: 253px;
+  min-height: 261px;
+  margin: 30px 40px 30px 40px;
+  border-bottom: 4px solid #3cc395;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 220px;
+  justify-content: center;
+  align-content: center;
+}
+.merch__item-img img{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  max-width: 150px;
+  max-height: 220px;
+}
+
+.item-name{
+  line-height: 25px;
+  font-size: 26px;
+  color: #a1a1a1;
+  text-align: center;
+}
+.merch__item-bottom{
+  display: flex;
+  max-width: 250px;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.item-price{
+  line-height: 25px;
+  font-size: 26px;
+  color: #a1a1a1;
+}
+.item-button{
+  line-height: 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #3cc395;
+  padding: 10px 9px 10px 9px;
+  margin-left: 12px;
+  border-radius: 3px;
+}

@@ -1,0 +1,15 @@
+<div class="merch">
+  <div class="container">
+    <div class="merch__items">
+      <div class="merch__item" *ngFor="let merch of items">
+        <div class="merch__item-img"><img src='{{merch.img}}' alt=""></div>
+        <div class="item-name">{{ merch.title }}</div>
+        <div class="merch__item-bottom">
+          <div class="item-price">{{ merch.price }}</div>
+          <a href="#" class="item-button"> BUY NOW</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

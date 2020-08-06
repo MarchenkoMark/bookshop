@@ -1,0 +1,11 @@
+<div class="modal" id="modal">
+  <div class="modal-header">
+    <div id="title" class="title">LOG IN</div>
+    <div id="message" class="message"></div>
+  </div>
+  <div class="modal-body">
+    <input id ="username" class="username" type="text" placeholder="USERNAME" (input)="usernameHandler($event)">
+    <input id ="password" class="password" type="text" placeholder="PASSWORD" (input)="passwordHandler($event)">
+    <button class="confirm" (click)="getInfo()">LET'S GO</button>
+  </div>
+</div>

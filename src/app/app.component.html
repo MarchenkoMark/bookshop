@@ -1,0 +1,12 @@
+<app-header (voted)="goToAccount()" ></app-header>
+
+<div *ngIf="mainPage">
+  <app-banner></app-banner>
+  <app-merch></app-merch>
+</div>
+
+<div *ngIf="accountPage">
+  <app-account></app-account>
+</div>
+
+<app-footer></app-footer>
