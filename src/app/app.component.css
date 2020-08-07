@@ -2,6 +2,10 @@
   box-sizing: border-box;
   font-family: 'Bebas Neue', cursive;
 }
+
+body{
+  background-color: #40c4b4;
+}
 a{
   text-decoration: none;
   display: inline-block;

@@ -7,5 +7,16 @@ html{
   margin-bottom: 5rem;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #40c4b4;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
