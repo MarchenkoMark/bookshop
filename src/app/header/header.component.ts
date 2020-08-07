@@ -1,8 +1,7 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import {ModalComponent} from '../modal/modal.component';
 import {AppComponent} from '../app.component';
-import EventEmitter = NodeJS.EventEmitter;
 
 @Component({
   selector: 'app-header',
@@ -19,6 +18,7 @@ export class HeaderComponent {
 
   @Output() voted = new EventEmitter();
 
-  vote(admit: boolean) {
+  vote(bool: boolean) {
+    this.voted.emit(bool);
   }
 }

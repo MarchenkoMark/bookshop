@@ -10,6 +10,6 @@ export class MerchComponent {
   items = [
     new Merch('LANDAU CH. 4', '$30', './assets/img/landau.jpg'),
     new Merch('FEYNMAN', '$20', './assets/img/feynman.jpg'),
-    new Merch('MArk', '$1000000', './assets/img/landau.jpg'),
+    new Merch('Mark', '$1000000', './assets/img/landau.jpg'),
   ]
 }

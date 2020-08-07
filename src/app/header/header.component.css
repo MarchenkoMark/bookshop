@@ -49,7 +49,7 @@ body{
   font-size: 30px;
   max-height: 52px;
   text-align: center;
-  padding: 10px 10px 5px 10px;
+  padding: 15px 10px 5px 10px;
   margin-top: 15px;
   border-radius: 10px;
 }
@@ -134,7 +134,7 @@ input#search-bar:focus::-moz-placeholder {
   padding-right: 20px;
   transition: all 0.3s;
 }
-#li_btn{
+.li_btn{
   color:#fff;
   line-height: 19px;
   font-size: 21px;

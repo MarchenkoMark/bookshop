@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import {Hero} from './hero';
-import {User} from './modal/user';
 
 @Component({
   selector: 'app-root',
@@ -11,14 +9,14 @@ import {User} from './modal/user';
 export class AppComponent {
   constructor( ) { }
 
+  message;
 
-  public goToAccount() {
-    this.mainPage = false;
-    this.accountPage = true;
+  public goToAccount(bool: boolean) {
+    this.mainPage = bool;
+    this.accountPage = !bool;
     console.log("hey");
-    console.log(this.mainPage);
   }
 
   mainPage: boolean = true;
-  accountPage: boolean = true;
+  accountPage: boolean = false;
 }
