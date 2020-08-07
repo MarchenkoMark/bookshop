@@ -3,33 +3,18 @@
 
   <div class="carousel-container">
     <igx-carousel>
-      <igx-slide>
+      <igx-slide *ngFor="let banner of banners">
 
         <div class="slider__item-content">
-          <img src="./assets/img/banner.png" alt="IMAGE">
+          <img src='{{ banner.imageUrl }}' alt="IMAGE">
           <div class="slider__item-right">
             <div class="slider__title">
-              Newest rocket science lectures
+              {{ banner.title }}
             </div>
             <div class="slider__text">
-              Legendary Neil Tyson's heuristics lectures
+              {{ banner.text }}
             </div>
-            <a href="#" class="slider__link">LEARN NOW</a>
-          </div>
-        </div>
-      </igx-slide>
-
-      <igx-slide>
-        <div class="slider__item-content">
-          <img src="img/banner.png" alt="IMAGE">
-          <div class="slider__item-right">
-            <div class="slider__title">
-              Newest rocket science lectures
-            </div>
-            <div class="slider__text">
-              Legendary Neil Tyson's heuristics lectures
-            </div>
-            <a href="#" class="slider__link">LEARN NOW</a>
+            <a href='{{ banner.link }}' class="slider__link">LEARN NOW</a>
           </div>
         </div>
 
