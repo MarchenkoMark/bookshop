@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import {IgxCarouselModule, IgxIconModule, IgxInputGroupModule} from 'igniteui-angular';
-import {MatDialogModule} from '@angular/material/dialog';
+import { IgxCarouselModule, IgxIconModule, IgxInputGroupModule } from 'igniteui-angular';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MerchComponent } from './merch/merch.component';
 import { ModalComponent } from './modal/modal.component';
 import { AccountComponent } from './account/account.component';
+import { TestService } from './test.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { AccountComponent } from './account/account.component';
     IgxIconModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [TestService],
   bootstrap: [AppComponent],
   entryComponents: [ModalComponent]
 })
