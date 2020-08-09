@@ -1,12 +1,6 @@
-<app-header (voted)=goToAccount($event)></app-header>
+<app-header (voted)=goToAccount($event)> </app-header>
 
-<div *ngIf="mainPage">
-  <app-banner></app-banner>
-  <app-merch></app-merch>
-</div>
-
-<div *ngIf="accountPage">
-  <app-account></app-account>
-</div>
+<router-outlet></router-outlet>
 
 <app-footer></app-footer>
+

@@ -12,6 +12,6 @@ export class TestService {
   constructor(private http: HttpClient) { }
 
   getTests () : Observable<IUser[]> {
-      return this.http.get<IUser[]>(this._url)
+      return this.http.get<IUser[]>(this._url);
   }
 }

@@ -14,6 +14,8 @@ import { ModalComponent } from './modal/modal.component';
 import { AccountComponent } from './account/account.component';
 import { TestService } from './test.service';
 import { HttpClientModule} from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { HttpClientModule} from '@angular/common/http';
     MerchComponent,
     ModalComponent,
     AccountComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { HttpClientModule} from '@angular/common/http';
     IgxInputGroupModule,
     IgxIconModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [TestService],
   bootstrap: [AppComponent],
