@@ -1,6 +1,13 @@
 <div class="account_info">
   <div class="container">
     <p class="account-title"> PERSONAL INFO:</p>
+    <ul>
+      <li *ngFor="let user of userList">
+        Name: {{ user.name }},
+        ID: {{user.id }}
+      </li>
+    </ul>
+    <br>
     <ul class="status">
       <li>NAME: MARK</li>
       <li>E-MAIL: markwalikdj@gmail.com</li>

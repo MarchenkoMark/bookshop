@@ -13,6 +13,7 @@ import { MerchComponent } from './merch/merch.component';
 import { ModalComponent } from './modal/modal.component';
 import { AccountComponent } from './account/account.component';
 import { TestService } from './test.service';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TestService } from './test.service';
     IgxCarouselModule,
     IgxInputGroupModule,
     IgxIconModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [TestService],
   bootstrap: [AppComponent],

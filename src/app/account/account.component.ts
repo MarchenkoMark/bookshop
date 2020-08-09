@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TestService} from '../test.service';
 
 @Component({
   selector: 'app-account',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountComponent implements OnInit {
 
-  constructor() { }
+  public userList = [];
+
+
+  constructor(private _testService: TestService) {
+    this._testService.getTests()
+        .subscribe( data => this.userList = data);
+  }
 
   ngOnInit(): void {
   }

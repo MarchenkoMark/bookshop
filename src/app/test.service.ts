@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {IUser} from './user';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TestService {
+  private _url :string = "/assets/data/users.json";
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getTests () {
-    return [
-      {"id" : 1, "name" : "Victor"},
-      {"id" : 2, "name" : "Pavel"}
-    ];
+  getTests () : Observable<IUser[]> {
+      return this.http.get<IUser[]>(this._url)
   }
 }

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {TestService} from './test.service';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +7,7 @@ import {TestService} from './test.service';
 })
 
 export class AppComponent {
-  public s = [];
 
-
-  constructor(private _testService: TestService) {
-    this.s = _testService.getTests();
-  }
 
   message;
 
