@@ -33,7 +33,6 @@ body{
   background-color: #40c4b4;
 }
 .banner{
-  min-height:380px;
   background-color: #40c4b4;
 }
 .slider__item-content{
@@ -43,7 +42,7 @@ body{
 .slider__item-content img{
   margin: 60px 70px 0 70px;
   width: 278px;
-  height: 325px;
+  max-height: 240px;
 }
 .slider__item-right{
   max-width: 420px;
@@ -77,9 +76,9 @@ body{
 .igx-carousel-slide-wrapper{
   min-height: 500px !important;
 }
-.igx-carousel{
+ igx-carousel{
   min-height: 350px
 }
-.igx-slide{
+ igx-slide{
   background-color: #40c4b4;
 }

@@ -34,7 +34,7 @@ body{
 }
 
 .merch{
-  min-height: 700px;
+  padding-bottom: 30px;
   background-color: white;
 }
 .merch__items{
@@ -90,4 +90,9 @@ body{
   padding: 10px 9px 10px 9px;
   margin-left: 12px;
   border-radius: 3px;
+}
+.item-button:hover{
+  background-color: #40c4b4;
+  color: rgb(100, 100, 100);
+  transition-duration: 200ms;
 }

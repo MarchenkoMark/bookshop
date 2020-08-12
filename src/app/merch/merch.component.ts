@@ -8,7 +8,7 @@ import {Merch} from './merch';
 })
 export class MerchComponent {
   items = [
-    new Merch('LANDAU CH. 4', '$30', './assets/img/landau.jpg'),
+    new Merch('LANDAU', '$30', './assets/img/landau.jpg'),
     new Merch('FEYNMAN', '$20', './assets/img/feynman.jpg'),
     new Merch('Hawking', '$100', './assets/img/hoking.jpg'),
   ]

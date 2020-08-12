@@ -14,7 +14,6 @@ body {
   background-color: #40c4b4;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  flex-direction:column;
 }
 
 .container{
