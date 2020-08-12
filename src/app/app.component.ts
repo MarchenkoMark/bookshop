@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-
-
   message;
 
   public goToAccount(bool: boolean) {

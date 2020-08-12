@@ -16,6 +16,8 @@ import { TestService } from './test.service';
 import { HttpClientModule} from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { BookComponent } from './book/book.component';
+import {BookService} from './book.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     ModalComponent,
     AccountComponent,
     DashboardComponent,
+    BookComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,10 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [TestService],
+  providers: [
+    TestService,
+    BookService
+  ],
   bootstrap: [AppComponent],
   entryComponents: [ModalComponent]
 })

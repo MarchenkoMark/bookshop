@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {Merch} from './merch';
 
 @Component({
@@ -10,6 +10,6 @@ export class MerchComponent {
   items = [
     new Merch('LANDAU CH. 4', '$30', './assets/img/landau.jpg'),
     new Merch('FEYNMAN', '$20', './assets/img/feynman.jpg'),
-    new Merch('Mark', '$1000000', './assets/img/landau.jpg'),
+    new Merch('Hawking', '$100', './assets/img/hoking.jpg'),
   ]
 }

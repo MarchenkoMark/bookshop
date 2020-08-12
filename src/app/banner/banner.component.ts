@@ -9,7 +9,7 @@ import {BannerItem} from './banner-item';
 export class BannerComponent {
 
   banners = [
-    new BannerItem("Newest rocket science lectures", "Legendary Neil Tyson's heuristics lectures", "./assets/img/banner.png", "#"),
-    new BannerItem("Some other lecture", "One more legendary physics tutorial via same link omg", "./assets/img/banner.png", "#"),
+    new BannerItem("Newest computer science lectures", "Legendary Richard Feynman's heuristics lectures", "./assets/img/banner.png", "https://www.youtube.com/watch?v=EKWGGDXe5MA"),
+    new BannerItem("Car seat headrest", "Music, that I used to listen while writing this gorgeous website ", "./assets/img/car-seat-headrest.png", "https://www.youtube.com/watch?v=KbDNP9R23h4"),
   ]
 }

@@ -14,9 +14,14 @@ body {
   background-color: #40c4b4;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  display:flex;
+  flex-direction:column;
 }
 
 .container{
   max-width: 1024px;
   margin: 0 auto;
+}
+footer{
+  margin-top:auto;
 }
