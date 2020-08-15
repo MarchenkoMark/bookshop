@@ -1,5 +1,7 @@
 [
-  {"id" : 1, "imageUrl" : " /assets/img/.jpg", "title" : "mark", "text": "lorem ipsum"},
-  {"id" : 2, "imageUrl" : "mark1", "title" : "mark1", "text": "lorem ipsum1"},
-  {"id" : 3, "imageUrl" : "mark2", "title" : "mark2", "text": "lorem ipsum2"}
+  {"id" : 1, "imageUrl" : "/assets/img/feynman.jpg", "title" : "FEYNMAN", "text": "Legendary lectures", "price": "$20", "link":  "#"},
+  {"id" : 2, "imageUrl" : "/assets/img/hoking.jpg", "title" : "HAWKING", "text": "Everything about time", "price": "$35", "link":  "#"},
+  {"id" : 3, "imageUrl" : "/assets/img/landau.jpg", "title" : "FEYNMAN", "text": "Best formulae book", "price": "$10", "link":  "#"},
+  {"id" : 4, "imageUrl" : "/assets/img/6013269360.jpg", "title" : "Et cetera", "text": "Lorem ipsum dolor sit amet", "price": "$00", "link":  "#"},
+  {"id" : 5, "imageUrl" : "/assets/img/null.jpg", "title" : "NULL", "text": "UNDEFINED", "price": "NULL", "link":  "#"}
 ]

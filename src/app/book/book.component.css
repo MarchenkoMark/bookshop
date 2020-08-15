@@ -18,9 +18,13 @@ ul, li{
   margin-top: 15px;
   margin-bottom: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.book__left-img {
+.book__left-img img {
   margin-right: 15px;
+  height: 250px;
+  min-height: 250px;
 }
 .book__right {
   display: flex;

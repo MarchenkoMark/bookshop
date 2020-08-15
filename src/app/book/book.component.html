@@ -1,13 +1,14 @@
 <div class="book">
   <div class="container">
     <div class="book-inner">
-      <div class="book__left-img"><img src="assets/img/landau.jpg" alt="LOGO"></div>
+      <input (keyup)="onKey($event)">
+      <div class="book__left-img"><img src=" {{ currentBook.imageUrl }}" alt="LOGO"></div>
       <div class="book__right">
-        <div class="book__right-title">BOOK</div>
-        <div class="book__right-text">Lorem ipsum dolor sit amet.</div>
+        <div class="book__right-title"> {{ currentBook.title }} </div>
+        <div class="book__right-text"> {{ currentBook.text }} </div>
         <div class="book__right__bottom">
-          <div class="book__right-price">$300</div>
-          <div class="book__right-link">BUY</div>
+          <div class="book__right-price"> {{ currentBook.price }} </div>
+          <div class="book__right-link"> {{ currentBook.link}} </div>
         </div>
       </div>
     </div>

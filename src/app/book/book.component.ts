@@ -9,16 +9,20 @@ import {IBook} from '../book';
 })
 export class BookComponent implements OnInit {
   public bookList = [];
-
+  public currentBook: IBook;
 
   constructor(private _bookService: BookService) {
     this._bookService.getBooks()
       .subscribe(data => this.bookList = data);
   }
-  getBook() : IBook {
-    return this.bookList[0];
+  getBook( value ) : IBook {
+    return this.bookList[value];
   }
+
   ngOnInit(): void {
   }
 
+  onKey(event: any) {
+    this.currentBook = this.getBook(event.target.value);
+  }
 }
