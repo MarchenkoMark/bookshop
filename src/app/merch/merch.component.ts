@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {Merch} from './merch';
+import {BookService} from '../book.service';
+import {IBook} from '../book';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-merch',
@@ -7,9 +9,14 @@ import {Merch} from './merch';
   styleUrls: ['./merch.component.css']
 })
 export class MerchComponent {
-  items = [
-    new Merch('LANDAU', '$30', './assets/img/landau.jpg'),
-    new Merch('FEYNMAN', '$20', './assets/img/feynman.jpg'),
-    new Merch('Hawking', '$100', './assets/img/hoking.jpg'),
-  ]
+  public items: IBook[];
+
+  constructor(private _bookService: BookService, private router: Router) {
+    this._bookService.getBooks()
+      .subscribe(data => this.items = data);
+  }
+
+  onSelect(link: number) {
+    this.router.navigate(['/merch', link]);
+  }
 }

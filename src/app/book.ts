@@ -1,8 +1,8 @@
 export interface IBook {
   id: number,
+  imageUrl: string,
   title: string,
   text: string,
-  imageUrl: string,
   price: string,
   link: string;
 }
