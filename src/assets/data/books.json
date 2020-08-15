@@ -1,5 +1,5 @@
 [
-  {"id" : 1, "imageUrl" : " /assets/img/feynman.jpg", "title" : "mark", "text": "lorem ipsum"},
+  {"id" : 1, "imageUrl" : " /assets/img/.jpg", "title" : "mark", "text": "lorem ipsum"},
   {"id" : 2, "imageUrl" : "mark1", "title" : "mark1", "text": "lorem ipsum1"},
   {"id" : 3, "imageUrl" : "mark2", "title" : "mark2", "text": "lorem ipsum2"}
 ]
