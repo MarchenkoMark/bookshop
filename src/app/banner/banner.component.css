@@ -34,6 +34,8 @@ body{
 }
 .banner{
   background-color: #40c4b4;
+  min-height: 88vh;
+
 }
 .slider__item-content{
   display: flex;

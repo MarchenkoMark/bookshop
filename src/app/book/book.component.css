@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Bebas Neue', cursive;
 }
+.book {
+  min-height: 86vh;
+}
 a{
   text-decoration: none;
   display: inline-block;
@@ -55,13 +58,14 @@ ul, li{
 .book__right-text {
   font-size: 20px;
   letter-spacing: 1px;
+  line-height: 20px;
   margin-left: 5px;
 }
 .book__right__bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .book__right-link {
   color: #2da89b;

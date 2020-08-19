@@ -33,15 +33,4 @@ ul, li{
   max-width: 1024px;
   margin: 0 auto;
 }
-body{
-  background-color: #40c4b4;
-}
-:host {
-  display: flex;
-  min-height: 100%;
-flex-direction: column;
-}
 
-.Site-content {
-  flex: 1;
-}
