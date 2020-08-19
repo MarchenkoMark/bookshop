@@ -1,8 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {HeaderComponent} from '../header/header.component';
-import {User} from './user';
-
-declare const check: any;
+import {Component, Output, EventEmitter} from '@angular/core';
+import { User } from './user';
 
 @Component({
   selector: 'app-modal',
@@ -12,11 +9,13 @@ declare const check: any;
 export class ModalComponent {
   private username: string;
   private password: string;
+  private currentUser: User;
 
-  users = [
+  users: User[] = [
     new User("admin", "admin"),
     new User("mark", "mark"),
   ]
+
   usernameHandler(event: any) {
     this.username = event.target.value;
   }
@@ -25,7 +24,16 @@ export class ModalComponent {
     this.password = event.target.value;
   }
 
+  @Output() public sender = new EventEmitter();
   getInfo() {
-    check(this.users, this.username, this.password)
+    for (let i = 0; i < this.users.length; i++) {
+      if(this.users[i].username === this.username && this.users[i].password === this.password) {
+        this.users[i].status = true;
+        this.currentUser = this.users[i];
+      }
+    }
+    console.log("User \"" + this.currentUser.username + "\" logged in");
+    this.sender.emit(this.currentUser);
   }
+
 }

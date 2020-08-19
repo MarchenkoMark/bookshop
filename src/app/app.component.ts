@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {User} from './modal/user';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,15 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  message;
+  public user: User;
 
   public goToAccount(bool: boolean) {
     this.mainPage = bool;
     this.accountPage = !bool;
     console.log("hey");
   }
+
+
 
   mainPage: boolean = true;
   accountPage: boolean = false;

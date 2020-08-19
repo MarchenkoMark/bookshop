@@ -1,7 +1,6 @@
-import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
-import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
+import {Component, Output, EventEmitter} from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
 import {ModalComponent} from '../modal/modal.component';
-import {AppComponent} from '../app.component';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +9,7 @@ import {AppComponent} from '../app.component';
 })
 export class HeaderComponent {
 
-  constructor( private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog) { }
 
   onCreate() {
     this.dialog.open(ModalComponent)
