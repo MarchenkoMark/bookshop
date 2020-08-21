@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {TestService} from '../test.service';
-import {UserService} from '../user.service';
-import {IUser} from '../user';
+import {Component, OnInit} from '@angular/core';
+import { TestService } from '../test.service';
+import { UserService } from '../user.service';
+import { IUser } from '../user';
 
 @Component({
   selector: 'app-account',
@@ -9,32 +9,36 @@ import {IUser} from '../user';
   styleUrls: ['./account.component.css']
 })
 export class AccountComponent implements OnInit {
-
-  public userList = [];
+  public usersList: IUser[];
   public user: IUser;
   public data;
-  public isActive: boolean;
+  public isActive: boolean = true;
 
   constructor(private _testService: TestService, private _userService: UserService) {
+    console.log("account constructor");
     this._testService.getTests()
-        .subscribe( data => this.userList = data);
+        .subscribe( data => this.usersList = data);
     this._userService.getUser()
         .subscribe(data => {
           this.data = data;
-          this.getUser(this.data)
+          this.setUser(this.data)
         });
   }
 
-  ngOnInit(): void {
+
+  setUser(user: IUser) {
+    if (user != null) {
+      this.user = user;
+      this.isActive = true;
+    } else {
+      console.log('user deleted');
+      this.isActive = false;
+    }
   }
 
-  getUser(user: IUser) {
-    this.user = user;
-
-    if (user == null) {
-      console.log("user deleted");
-      this.isActive = false;
-    } else this.isActive = true;
+  ngOnInit(): void {
+    this.user = this._userService.getCurrentUser();
+    if (this.user == null) this.isActive = false;
   }
 
 }

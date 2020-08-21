@@ -145,6 +145,7 @@ input#search-bar:focus::-moz-placeholder {
   outline: none;
   border: none;
   background-color: #4ccfc1;
+  cursor: pointer;
 }
 .header__li:last-child a{
   border-right: none;

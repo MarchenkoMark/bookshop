@@ -50,6 +50,7 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
+/*
 export const routingComponents = [
                                     AccountComponent,
                                     BannerComponent,
@@ -58,3 +59,4 @@ export const routingComponents = [
                                     DashboardComponent,
                                     PageNotFoundComponent
                                   ]
+*/

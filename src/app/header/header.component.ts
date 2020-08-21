@@ -1,46 +1,40 @@
-import {Component, Output, EventEmitter} from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
-import {ModalComponent} from '../modal/modal.component';
-import {User} from '../modal/user';
-import {IUser} from '../user';
-import {UserService} from '../user.service';
-import {TestService} from '../test.service';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { IUser } from '../user';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
+
 export class HeaderComponent {
-  //private dialog: MatDialog
-  //public user: User;
+  private DEFAULT_VALUE: string = "log in";
+  private LOGGED_VALUE: string = "log out";
   public isActive: boolean;
-  public isLogged: string = "log in";
+  public buttonText: string = this.DEFAULT_VALUE;
 
-  constructor(public userService: UserService) { }
+  constructor(public _userService: UserService) { }
 
-  onCreate() {
-    //this.dialog.open(ModalComponent);
-    if(this.isLogged == "log out") {
+  open() {
+    if(this.buttonText == this.LOGGED_VALUE) {
       this.setUser(null);
-      this.isLogged = "log in";
+      this.buttonText = this.DEFAULT_VALUE;
       return;
     }
     this.isActive = true;
   }
 
   setUser(user: IUser) {
-    this.userService.setUser(user);
+    this._userService.setUser(user);
   }
 
   @Output() sendUser = new EventEmitter();
   vote(user: IUser) {
     if (user.status) {
-      this.isLogged = "log out";
+      this.buttonText = this.LOGGED_VALUE;
       this.isActive = false;
       }
     this.sendUser.emit(user);
   }
-
-
 }
