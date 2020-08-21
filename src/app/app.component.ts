@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {User} from './modal/user';
+import { User } from './modal/user';
+import {UserService} from './user.service';
 
 @Component({
   selector: 'app-root',
@@ -9,15 +10,4 @@ import {User} from './modal/user';
 
 export class AppComponent {
   public user: User;
-
-  public goToAccount(bool: boolean) {
-    this.mainPage = bool;
-    this.accountPage = !bool;
-    console.log("hey");
-  }
-
-
-
-  mainPage: boolean = true;
-  accountPage: boolean = false;
 }

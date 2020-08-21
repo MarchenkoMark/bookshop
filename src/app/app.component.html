@@ -1,7 +1,5 @@
 <div class="Site">
-<app-header (voted)=goToAccount($event)> </app-header>
-
+<app-header (sendUser)="user=$event"> </app-header>
 <router-outlet class="Site-content"></router-outlet>
-
 <app-footer></app-footer>
 </div>

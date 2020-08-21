@@ -32,4 +32,15 @@ export class BookComponent implements OnInit {
     let prevId = this.id - 1;
     this.router.navigate(['/merch', prevId]);
   }
+
+  isPalindrome(word: string): boolean {
+    if(word == "") return true;
+    for (let i = 0; i < word.length; i++) {
+      if (word[i] != word[word.length - i - 1]) i = word.length; //break;
+      else if (i >= (word.length - i - 1)) return true;
+    }
+    return false;
+  }
+
+  // 232
 }

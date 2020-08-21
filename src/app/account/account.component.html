@@ -1,19 +1,14 @@
 <div class="account_info">
   <div class="container">
     <p class="account-title"> PERSONAL INFO:</p>
-    <ul>
-      <li *ngFor="let user of userList">
-        Name: {{ user.name }},
-        ID: {{user.id }}
-      </li>
-    </ul>
+
     <br>
-    <ul class="status">
-      <li>NAME: MARK</li>
-      <li>E-MAIL: markwalikdj@gmail.com</li>
+    <ul *ngIf="isActive" class="status">
+      <li>NAME: {{ user.name }}</li>
+      <li>E-MAIL: {{ user.eMail}}</li>
       <li>PHONE NUMBER: +380504219990</li>
-      <li>SEX: MALE</li>
-      <li>BD: 18.06.2002</li>
+      <li>SEX: {{ user.sex }}</li>
+      <li>BD: {{ user.dateOfBirth }}</li>
     </ul>
     <p class="account-title">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis ipsam aspernatur velit

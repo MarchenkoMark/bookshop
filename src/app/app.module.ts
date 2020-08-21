@@ -19,6 +19,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BookComponent } from './book/book.component';
 import {BookService} from './book.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {UserService} from './user.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   providers: [
     TestService,
-    BookService
+    BookService,
+    UserService
   ],
   bootstrap: [AppComponent],
   entryComponents: [ModalComponent]

@@ -8,7 +8,7 @@
           <a href="#"><img alt="alt" class="search-icon"
                            src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
         </div>
-        <button id="btn" (click)="onCreate()" data-modal-target="#modal">LOG IN</button>
+        <button id="btn" (click)="onCreate()" data-modal-target="#modal"> {{ isLogged }}</button>
 
         <div id="overlay"></div>
       </div>
@@ -29,4 +29,5 @@
       </div>
     </div>
   </div>
+  <app-modal [isActive]="isActive" (sender)="vote($event)" (closing)="isActive=false"></app-modal>
 </header>

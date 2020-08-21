@@ -157,3 +157,11 @@ input#search-bar:focus::-moz-placeholder {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+
+app-modal {
+  transform: scale(0);
+}
+app-modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
