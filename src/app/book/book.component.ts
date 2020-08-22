@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {BookService} from '../book.service';
-import {IBook} from '../book';
-import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import { BookService } from '../book.service';
+import { IBook } from '../book';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 
 @Component({
   selector: 'app-book',
@@ -18,7 +18,6 @@ export class BookComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //this.id = parseInt(this.route.snapshot.paramMap.get('id'));
     this.route.paramMap.subscribe((params: ParamMap) =>
       this.id = parseInt(params.get('id'))
     )
@@ -32,15 +31,4 @@ export class BookComponent implements OnInit {
     let prevId = this.id - 1;
     this.router.navigate(['/merch', prevId]);
   }
-
-  isPalindrome(word: string): boolean {
-    if(word == "") return true;
-    for (let i = 0; i < word.length; i++) {
-      if (word[i] != word[word.length - i - 1]) i = word.length; //break;
-      else if (i >= (word.length - i - 1)) return true;
-    }
-    return false;
-  }
-
-  // 232
 }

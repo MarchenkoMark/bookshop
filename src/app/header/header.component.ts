@@ -9,12 +9,11 @@ import { UserService } from '../user.service';
 })
 
 export class HeaderComponent {
-  private DEFAULT_VALUE: string = "log in";
+  private DEFAULT_VALUE: string = "Guest: log in";
   private LOGGED_VALUE: string = "log out";
-  private GUEST: string = "Guest";
   public isLogged: boolean;
   public isActive: boolean;
-  public buttonText: string = this.GUEST + ": " + this.DEFAULT_VALUE;
+  public buttonText: string = this.DEFAULT_VALUE;
 
   constructor(public _userService: UserService) { }
 
@@ -22,8 +21,8 @@ export class HeaderComponent {
     if(this.isLogged) {
       console.log("here");
       this.setUser(null);
-      this.buttonText = this.GUEST + ": " +  this.DEFAULT_VALUE;
-      this.isLogged = !this.isLogged;
+      this.buttonText = this.DEFAULT_VALUE;
+      this.isLogged = false;
       return;
     }
     this.isActive = true;

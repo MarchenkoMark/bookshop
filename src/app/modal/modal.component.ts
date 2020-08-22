@@ -1,8 +1,7 @@
 import {Component, Output, EventEmitter, Input} from '@angular/core';
-import { User } from './user';
 import {UserService} from '../user.service';
 import {IUser} from '../user';
-import {TestService} from '../test.service';
+import {UserListService} from '../user-list.service';
 
 @Component({
   selector: 'app-modal',
@@ -13,22 +12,23 @@ export class ModalComponent {
   private username: string;
   private password: string;
   private currentUser: IUser;
-
-
-  constructor(private userService: UserService, private testService: TestService) {
-    testService.getTests().subscribe(users => this.users = users);
-  }
+  private users: IUser[];
 
   @Input('isActive') public isActive;
 
-  users: IUser[];
+
+  constructor(private userService: UserService, private testService: UserListService) {
+    testService.getTests().subscribe(users => this.users = users);
+  }
 
   usernameHandler(event: any) {
     this.username = event.target.value;
   }
-
   passwordHandler(event: any) {
     this.password = event.target.value;
+  }
+  setUser(user: IUser) {
+    this.userService.setUser(user);
   }
 
   @Output() public sender = new EventEmitter();
@@ -43,11 +43,6 @@ export class ModalComponent {
     this.sender.emit(this.currentUser);
     this.setUser(this.currentUser);
   }
-
-  setUser(user: IUser) {
-    this.userService.setUser(user);
-  }
-
   @Output() public closing = new EventEmitter();
   close() {
     this.closing.emit();

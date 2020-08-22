@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { User } from './modal/user';
-import {UserService} from './user.service';
+import {IUser} from './user';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +8,5 @@ import {UserService} from './user.service';
 })
 
 export class AppComponent {
-  public user: User;
+  public user: IUser;
 }

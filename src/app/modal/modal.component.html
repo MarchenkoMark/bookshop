@@ -2,12 +2,13 @@
   <div class="modal-header">
     <div id="title" class="title">LOG IN</div>
     <div id="message" class="message"></div>
-    <button class="close-button" (click)="close()">CLOSE</button>
+    <button class="close-button" (click)="close()">X</button>
   </div>
   <div class="modal-body">
+    <label for="username"></label>
     <input id ="username" class="username" type="text" placeholder="USERNAME" (input)="usernameHandler($event)">
+    <label for="password"></label>
     <input id ="password" class="password" type="text" placeholder="PASSWORD" (input)="passwordHandler($event)">
     <button class="confirm" (click)="getInfo()">LET'S GO</button>
-
   </div>
 </div>

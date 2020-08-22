@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MerchComponent } from './merch/merch.component';
 import { ModalComponent } from './modal/modal.component';
 import { AccountComponent } from './account/account.component';
-import { TestService } from './test.service';
+import { UserListService } from './user-list.service';
 import { HttpClientModule} from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -46,7 +46,7 @@ import {UserService} from './user.service';
     AppRoutingModule
   ],
   providers: [
-    TestService,
+    UserListService,
     BookService,
     UserService
   ],

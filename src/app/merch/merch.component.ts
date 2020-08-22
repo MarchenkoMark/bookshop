@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {BookService} from '../book.service';
-import {IBook} from '../book';
-import {Router} from '@angular/router';
+import { BookService } from '../book.service';
+import { IBook } from '../book';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-merch',

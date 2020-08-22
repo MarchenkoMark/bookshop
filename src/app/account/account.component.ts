@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { TestService } from '../test.service';
+import { UserListService } from '../user-list.service';
 import { UserService } from '../user.service';
 import { IUser } from '../user';
 
@@ -14,9 +14,9 @@ export class AccountComponent implements OnInit {
   public data;
   public isActive: boolean = true;
 
-  constructor(private _testService: TestService, private _userService: UserService) {
+  constructor(private _userListService: UserListService, private _userService: UserService) {
     console.log("account constructor");
-    this._testService.getTests()
+    this._userListService.getTests()
         .subscribe( data => this.usersList = data);
     this._userService.getUser()
         .subscribe(data => {
