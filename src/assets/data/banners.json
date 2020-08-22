@@ -1,4 +1,5 @@
 [
   {"title":  "Newest computer science lectures", "text": "Legendary Richard Feynman's heuristics lectures", "imageUrl": "./assets/img/banner.png", "link":  "https://www.youtube.com/watch?v=EKWGGDXe5MA"},
-  {"title":  "Car seat headrest", "text": "Music, that I used to listen while writing this gorgeous website ", "imageUrl": "./assets/img/car-seat-headrest.png", "link":  "https://www.youtube.com/watch?v=KbDNP9R23h4"}
+  {"title":  "Car seat headrest", "text": "Music, that I used to listen while writing this gorgeous website ", "imageUrl": "./assets/img/car-seat-headrest.png", "link":  "https://www.youtube.com/watch?v=KbDNP9R23h4"},
+  {"title":  "Radiohead", "text": "Just some other artist (and his song) that I like", "imageUrl": "./assets/img/okComputer.jpg", "link":  "https://www.youtube.com/watch?v=u5CVsCnxyXg&list=RDFck3P8usTCQ&index=5"}
 ]
