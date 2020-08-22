@@ -16,13 +16,17 @@ a{
   justify-content: space-around;
   color: #fff;
   margin-bottom: 10px;
-  cursor: pointer;
+
 }
 .routing a {
   background-color: #a1a1a1;
   padding: 0 10px 0 10px;
   margin-bottom: 30px;
   border-radius: 5px;
+  cursor: pointer;
+}
+.routing a.dis{
+  cursor: default;
 }
 ul, li{
   list-style: none;

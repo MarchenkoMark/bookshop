@@ -96,3 +96,19 @@ body{
   color: rgb(100, 100, 100);
   transition-duration: 200ms;
 }
+.merch_navigation{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 40px;
+  padding-top: 20px;
+}
+.merch_navigation-ul p {
+  display: inline;
+  margin: 30px 10px 15px;
+  cursor: pointer;
+  border-bottom: dashed 1px black;
+}
+.merch_navigation-ul p.chosen{
+  border-bottom: solid 1px black;
+}

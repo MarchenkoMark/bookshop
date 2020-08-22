@@ -1,9 +1,9 @@
 [
+  {"id" : 0, "imageUrl" : "/assets/img/java.jpg", "title" : "Java Core", "text": "Core Java, Eleventh Edition, is the definitive guide to writing robust, maintainable code.", "price": "$50", "link":  "https://eloquentjavascript.net"},
   {"id" : 1, "imageUrl" : "/assets/img/feynman.jpg", "title" : "FEYNMAN", "text": "Legendary lectures", "price": "$20", "link":  "https://www.google.com.ua/?hl=ru"},
   {"id" : 2, "imageUrl" : "/assets/img/hoking.jpg", "title" : "HAWKING", "text": "Everything about time", "price": "$35", "link":  "https://www.google.com.ua/?hl=ru"},
   {"id" : 3, "imageUrl" : "/assets/img/landau.jpg", "title" : "LANDAU", "text": "Best formulae book", "price": "$10", "link":  "https://www.google.com.ua/?hl=ru"},
   {"id" : 4, "imageUrl" : "/assets/img/6013269360.jpg", "title" : "ALGORITHMS", "text": "Lorem ipsum dolor sit amet", "price": "$15", "link":  "https://www.google.com.ua/?hl=ru"},
   {"id" : 5, "imageUrl" : "/assets/img/astrophysics.jpg", "title" : "Neil Tyson", "text": "Astrophysics for people in a hurry", "price": "$25", "link":  "https://www.google.com.ua/?hl=ru"},
-  {"id" : 6, "imageUrl" : "/assets/img/javascript.jpg", "title" : "Eloquent javascript", "text": "The best free online JavaScript book", "price": "$00", "link":  "https://eloquentjavascript.net"},
-  {"id" : 7, "imageUrl" : "/assets/img/java.jpg", "title" : "Java Core", "text": "Core Java, Eleventh Edition, is the definitive guide to writing robust, maintainable code.", "price": "$50", "link":  "https://eloquentjavascript.net"}
+  {"id" : 6, "imageUrl" : "/assets/img/javascript.jpg", "title" : "Eloquent javascript", "text": "The best free online JavaScript book", "price": "$00", "link":  "https://eloquentjavascript.net"}
   ]

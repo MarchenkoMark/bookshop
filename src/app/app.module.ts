@@ -20,6 +20,7 @@ import { BookComponent } from './book/book.component';
 import {BookService} from './book.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {UserService} from './user.service';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {UserService} from './user.service';
     DashboardComponent,
     BookComponent,
     PageNotFoundComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,7 @@ import {UserService} from './user.service';
   providers: [
     UserListService,
     BookService,
-    UserService
+    UserService,
   ],
   bootstrap: [AppComponent],
   entryComponents: [ModalComponent]
