@@ -14,6 +14,7 @@ export class HeaderComponent {
   public isLogged: boolean;
   public isActive: boolean;
   public buttonText: string = this.DEFAULT_VALUE;
+  private searchText: string = "";
 
   constructor(public _userService: UserService) { }
 
@@ -41,4 +42,12 @@ export class HeaderComponent {
       }
     this.sendUser.emit(user);
   }
+
+  request(event: any) {
+    this.searchText = event.target.value;
+  }
+  find() {
+    console.log(this.searchText);
+  }
 }
+
