@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from '../dashboard/dashboard.component'
 import { AccountComponent } from '../account/account.component';
-import { BannerComponent } from '../banner/banner.component';
 import { BookComponent } from '../book/book.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 import { MerchComponent } from '../merch/merch.component';
+import {MainPageComponent} from '../main-page/main-page.component';
 
 const routes: Routes = [
   {
@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: 'main',
-    component: BannerComponent,
+    component: MainPageComponent,
   },
   {
     path: 'merch',
