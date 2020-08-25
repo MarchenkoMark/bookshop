@@ -1,6 +1,9 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { IUser } from '../user';
 import { UserService } from '../user.service';
+import {BookService} from '../book.service';
+import {IBook} from '../book';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -14,8 +17,13 @@ export class HeaderComponent {
   public isLogged: boolean;
   public isActive: boolean;
   public buttonText: string = this.DEFAULT_VALUE;
+  private searchText: string = "";
+  private bookList: IBook[];
 
-  constructor(public _userService: UserService) { }
+  constructor(public _userService: UserService, public _bookService: BookService, private router: Router) {
+    this._bookService.getBooks()
+      .subscribe(data => this.bookList = data);
+  }
 
   open() {
     if(this.isLogged) {
@@ -40,5 +48,17 @@ export class HeaderComponent {
       this.isActive = false;
       }
     this.sendUser.emit(user);
+  }
+
+  request(event: any) {
+    this.searchText = event.target.value;
+  }
+  find() {
+    console.log(this.searchText);
+    for (let book of this.bookList) {
+      if (book.title.toLowerCase() == this.searchText.toLowerCase()) {
+        this.router.navigate(['/merch', book.id + 1]);
+      }
+    }
   }
 }

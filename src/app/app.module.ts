@@ -21,6 +21,7 @@ import {BookService} from './book.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {UserService} from './user.service';
 import { FilterPipe } from './filter.pipe';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FilterPipe } from './filter.pipe';
     BookComponent,
     PageNotFoundComponent,
     FilterPipe,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,
