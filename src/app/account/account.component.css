@@ -12,6 +12,10 @@ ul, li{
   margin: 0;
   padding: 0;
 }
+.account-content{
+  margin: 0 auto;
+  font-size: 40px;
+}
 .account-title{
   margin: 25px auto 45px;
   text-align: right;
@@ -28,9 +32,9 @@ ul, li{
 
 .status{
   color:#fff;
-  line-height: 19px;
-  font-size: 21px;
-  margin-top: 10px;
+  line-height: 50px;
+  font-size: 40px;
+  margin-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   transition: all 0.3s;
@@ -43,6 +47,6 @@ ul, li{
 }
 .status li {
   text-align: left;
-  margin-left: 40%;
+  margin-left: 30%;
   padding: 8px;
 }

@@ -54,10 +54,18 @@ export class HeaderComponent {
     this.searchText = event.target.value;
   }
   find() {
-    console.log(this.searchText);
+    if(this.searchText.length < 4) {
+      alert("Search bar must contain at least 4 letters");
+      return;
+    }
+
     for (let book of this.bookList) {
-      if (book.title.toLowerCase() == this.searchText.toLowerCase()) {
+      if (book.title.toLowerCase().includes(this.searchText.toLowerCase())) {
         this.router.navigate(['/merch', book.id + 1]);
+        return;
+      } else if (book.text.toLowerCase().includes(this.searchText.toLowerCase())) {
+        this.router.navigate(['/merch', book.id + 1]);
+        return;
       }
     }
   }
