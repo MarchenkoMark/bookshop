@@ -9,7 +9,7 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
   styleUrls: ['./book.component.css']
 })
 export class BookComponent implements OnInit {
-  public items: IBook[];
+  public books: IBook[];
   public id: number;
   public first: boolean;
   public last: boolean;
@@ -17,7 +17,7 @@ export class BookComponent implements OnInit {
 
   constructor(private _bookService: BookService, private route: ActivatedRoute, private router: Router) {
     this._bookService.getBooks()
-      .subscribe(data => this.items = data);
+      .subscribe(data => this.books = data);
   }
 
   ngOnInit(): void {
@@ -27,7 +27,9 @@ export class BookComponent implements OnInit {
   }
 
   goNext() {
-    if (this.id >= this.items.length) return;
+
+
+    if (this.id >= this.books.length) return;
     let nextId = this.id + 1;
     this.router.navigate(['/merch', nextId]);
   }

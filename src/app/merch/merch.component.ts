@@ -10,7 +10,7 @@ import { Selector } from './selector';
   styleUrls: ['./merch.component.css']
 })
 export class MerchComponent implements OnInit{
-  public items: IBook[];
+  public books: IBook[];
   public currentSelector: Selector;
   public display: boolean = false;
   public selectors = [
@@ -23,8 +23,8 @@ export class MerchComponent implements OnInit{
     this._bookService.getBooks()
       .subscribe(data => {
         console.log("subscription");
-        this.items = data;
-        console.log(this.items[0])
+        this.books = data;
+        console.log(this.books[0])
         this.display = false;
         this.display = true;
       });
