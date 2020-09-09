@@ -6,3 +6,4 @@ export interface IBook {
   price: string,
   link: string;
 }
+

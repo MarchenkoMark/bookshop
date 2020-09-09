@@ -12,8 +12,8 @@
       </div>
     </div>
     <div class="routing">
-      <a [class.dis]="isDisabled" (click)="goPrev()"> GO PREV </a>
-      <a *ngIf="id < items.length" (click)="goNext()"> GO NEXT </a>
+      <a (click)="goPrev()"> GO PREV </a>
+      <a (click)="goNext()"> GO NEXT </a>
     </div>
   </div>
 </div>

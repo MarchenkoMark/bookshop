@@ -21,7 +21,10 @@ export class MerchComponent implements OnInit{
 
   constructor(private _bookService: BookService, private router: Router) {
     this._bookService.getBooks()
-      .subscribe(data => this.items = data);
+      .subscribe(data => {
+        console.log("hellos")
+        this.items = data;
+      });
   }
 
   ngOnInit(): void {
