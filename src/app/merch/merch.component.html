@@ -7,8 +7,9 @@
     </div>
     <div class="merch__items" *ngIf="display">
       <div class="merch__item" *ngFor="let merch of (items|filter: currentSelector.defaultId) ">
-        <div class="merch__item-img"><img src='{{ merch.imageUrl }}' alt=""></div>
         <div class="item-name">{{ merch.title }}</div>
+        <div class="merch__item-img"><img src='{{ merch.imageUrl }}' alt=""></div>
+
         <div class="merch__item-bottom">
           <div class="item-price">{{ merch.price }}</div>
           <a (click)="onSelect( merch.id + 1)" class="item-button"> BUY NOW</a>

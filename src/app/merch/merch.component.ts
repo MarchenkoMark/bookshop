@@ -12,7 +12,7 @@ import { Selector } from './selector';
 export class MerchComponent implements OnInit{
   public items: IBook[];
   public currentSelector: Selector;
-  public display: boolean = true;
+  public display: boolean = false;
   public selectors = [
     new Selector(0, "Popularity", true),
     new Selector(1, "Increase price", false),
@@ -22,14 +22,17 @@ export class MerchComponent implements OnInit{
   constructor(private _bookService: BookService, private router: Router) {
     this._bookService.getBooks()
       .subscribe(data => {
-        console.log("hellos")
+        console.log("subscription");
         this.items = data;
+        console.log(this.items[0])
+        this.display = false;
+        this.display = true;
       });
   }
 
   ngOnInit(): void {
     this.currentSelector = this.selectors[0];
-    console.log("onInit");
+    console.log("merch onInit");
   }
 
   onSelect(link: number) {

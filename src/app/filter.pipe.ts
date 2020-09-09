@@ -7,7 +7,8 @@ import { IBook } from './book';
 export class FilterPipe implements PipeTransform {
 
   transform(books: IBook[], sortingId: number): IBook[] {
-    console.log("here: " + sortingId);
+    console.log("pipe: " + sortingId);
+    console.log(books[1].title);
     if (sortingId == 0) {
       return this.defaultOrder(books);
     } else if(sortingId == 1) {
