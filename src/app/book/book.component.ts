@@ -14,10 +14,15 @@ export class BookComponent implements OnInit {
   public first: boolean;
   public last: boolean;
   public isDisabled: boolean;
+  public show: boolean = false;
 
   constructor(private _bookService: BookService, private route: ActivatedRoute, private router: Router) {
     this._bookService.getBooks()
-      .subscribe(data => this.books = data);
+      .subscribe(data => {
+        this.books = data
+        this.show = false;
+        this.show = true;
+      });
   }
 
   ngOnInit(): void {

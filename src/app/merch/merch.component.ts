@@ -22,9 +22,7 @@ export class MerchComponent implements OnInit{
   constructor(private _bookService: BookService, private router: Router) {
     this._bookService.getBooks()
       .subscribe(data => {
-        console.log("subscription");
         this.books = data;
-        console.log(this.books[0])
         this.display = false;
         this.display = true;
       });
@@ -32,7 +30,6 @@ export class MerchComponent implements OnInit{
 
   ngOnInit(): void {
     this.currentSelector = this.selectors[0];
-    console.log("merch onInit");
   }
 
   onSelect(link: number) {

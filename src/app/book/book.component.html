@@ -1,6 +1,6 @@
 <div class="book">
   <div class="container">
-    <div class="book-inner">
+    <div class="book-inner" *ngIf="show">
       <div class="book__left-img"><img src="{{books[id - 1].imageUrl}}" alt="LOGO"></div>
       <div class="book__right">
         <div class="book__right-title"> {{ books[id - 1].title }} </div>

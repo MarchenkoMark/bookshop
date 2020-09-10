@@ -7,9 +7,6 @@ import { IBook } from './book';
 export class FilterPipe implements PipeTransform {
 
   transform(books: IBook[], sortingId: number): IBook[] {
-    console.log("pipe: " + sortingId);
-    console.log(books[0].price);
-
     if (sortingId == 0) {
       return this.defaultOrder(books);
     } else if(sortingId == 1) {
@@ -24,7 +21,6 @@ export class FilterPipe implements PipeTransform {
     for (let book of books){
       newArr[book.id-1] = book;
     }
-    newArr.forEach(book => console.log(book.title));
     return newArr;
   }
 
@@ -41,7 +37,6 @@ export class FilterPipe implements PipeTransform {
         }
       }
     } while (swapped == true);
-    newArr.forEach( book => console.log(book.price));
     return newArr;
   }
 
