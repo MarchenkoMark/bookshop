@@ -1,0 +1,7 @@
+[
+  {"id" : 1, "name" : "mark", "password" : "mark",
+    "eMail": "markwalikdj@gmail.com", "sex": "male", "dateOfBirth": "18.06.2002", "status": false
+  },
+  {"id" : 2, "name" : "admin", "password" : "admin",
+    "eMail": "adminmail@gmail.com", "sex": "male", "dateOfBirth": "22.08.1935", "status": false}
+]
