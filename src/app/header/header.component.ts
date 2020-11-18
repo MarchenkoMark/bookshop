@@ -57,7 +57,7 @@ export class HeaderComponent {
     console.log(this.searchText);
     for (let book of this.bookList) {
       if (book.title.toLowerCase() == this.searchText.toLowerCase()) {
-        this.router.navigate(['/merch', book.id]);
+        this.router.navigate(['/merch', book.id + 1]);
       }
     }
   }
