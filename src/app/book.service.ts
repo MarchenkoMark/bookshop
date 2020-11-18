@@ -9,7 +9,7 @@ import {IBook} from './book';
 })
 
 export class BookService {
-  private _url: string = "http://localhost:8080/books";
+  private _url: string = "http://178.158.231.25:8081/books";
 
   constructor(private http: HttpClient) {
   }

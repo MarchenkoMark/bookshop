@@ -1,20 +1,46 @@
 <div class="account_info">
   <div class="container">
-    <ul *ngIf="isActive" class="status">
-      <p class="account-title"> PERSONAL INFO:</p>
-      <br>
-      <li>NAME: {{ user.name }}</li>
-      <li>E-MAIL: {{ user.eMail}}</li>
-      <li>PHONE NUMBER: +380504219990</li>
-      <li>SEX: {{ user.sex }}</li>
-      <li>BD: {{ user.dateOfBirth }}</li>
-    </ul>
     <p class="account-title">
       Hint: to login enter username:"admin" and password:"admin"
-      <br>
-      <br>
-      FROM AUTHOR: This website has been made as my first pet-project. Here I show some technologies that I know. Technologies I can use are: Spring (DI, IOC),
-      Java (Java CLI, Java Core, Multithreading, Collections, IO, Java 8), Git (GitHub). I also do know main aspects of OOP (SOLID, GRASP).
     </p>
+
+    <div class = "cv">
+      <div class = "title">
+        <p> Marchenko Mark </p>
+        <p> Junior Java/Spring Developer </p>
+      </div>
+      <ul *ngIf="isActive" class="title">
+        <p> PERSONAL INFO:</p>
+        <li>E-MAIL: {{ user.eMail}}</li>
+        <li>PHONE NUMBER: +380504219990</li>
+        <li>BD: {{ user.dateOfBirth }}</li>
+      </ul>
+      <p> Professional skills: </p>
+      <p>1. Back-end: Experience with Java (Java 8, Multithreading, Collections, IO), frameworks Spring (Spring Core, Spring MVC) & Maven. Also I have an experience with MySQL DataBases via Hibernate</p>
+      <p>2. Back-end: HTML, CSS. JavaScript basis (for example understanding the difference between Function Expression/Function Declaration). Angular framework (Components, Services, Pipes).</p>
+      <p>3. Tools: active user of version control system GitHub. Experienced with Ajax, Rest. Knowledge of clean code principles & SOLID. Acquainted with Scrum, Kanban methodologies.</p>
+      <p>4. Languages: English: B2+. Native Ukrainian and Russian.</p>
+      <p> Education: </p>
+      <p>Graduated from Ukrainian Physics and Mathematics Lyceum. Now I am studying in Kyiv National University on the Faculty of Computer Science: Department of Computer Science
+
+      <p>Additional Info:</p>
+      <ul>
+        <li>• Third place on Ukrainian Physics Olympiad, Second place on Kyiv Programming Olympiad, Second place on Kyiv Math Olympiad.
+        <li>• National exam: 196 math, 194 English, 194 physics, 190 ukrainian.
+        <li>• Self-studied (in exception for JavaRush courses)
+        <li>• Ability to defend my projects (First place in Ukraine for «conducting a scientific discussion» on Young Mathematicians Tournament 2019)
+      </ul>
+      <p>Personal features:</p>
+      <p>No bad habits, fast-learning, responsible, motivated, punctual</p>
+
+      <p>Finished projects:</p>
+      <ul>
+        <li>Book Application: Web-shop, on Angular and Spring. Features: View of all available books (has filters), page of individual book with its description, search system, login system.
+        <li>Angular Front-end: Page & Github
+        <li>Spring Back-end: Page & Github
+        <li>Static website on HTML, CSS, JavaScript: Github
+      </ul>
+      <p>No work experience</p>
+    </div>
   </div>
 </div>

@@ -14,7 +14,7 @@ ul, li{
 }
 .account-title{
   margin: 25px auto 45px;
-  text-align: right;
+  text-align: center;
   color:#fff;
   line-height: 30px;
   font-size: 21px;
@@ -45,4 +45,13 @@ ul, li{
   text-align: left;
   margin-left: 40%;
   padding: 8px;
+}
+
+.cv{
+  margin: 0 0 8.0pt;
+  line-height: 107%;
+  font-size: 15px;
+}
+.title {
+  text-align: center;
 }
