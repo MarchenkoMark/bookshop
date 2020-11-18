@@ -5,7 +5,7 @@
   font-family: 'Bebas Neue', cursive;
 }
 .book {
-  min-height: 86vh;
+  min-height: 100vh;
 }
 a{
   text-decoration: none;
@@ -43,8 +43,8 @@ ul, li{
 }
 .book__left-img img {
   margin-right: 15px;
-  height: 250px;
-  min-height: 250px;
+  height: 350px;
+  min-height: 350px;
 }
 .book__right {
   display: flex;
@@ -58,18 +58,22 @@ ul, li{
 }
 .book__right-title {
   font-size: 35px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 .book__right-text {
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 20px;
-  margin-left: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .book__right__bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  margin-left: 10px;
 }
 .book__right-link {
   color: #2da89b;
@@ -77,6 +81,6 @@ ul, li{
   border-radius: 4px;
   text-align: center;
   margin-bottom: 10px;
-  margin-right: 30px;
+  margin-right: 10px;
   padding: 0 10px 0 10px;
 }
