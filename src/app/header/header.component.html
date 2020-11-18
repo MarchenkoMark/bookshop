@@ -4,8 +4,8 @@
       <div class="header__top-inner">
         <a routerLink="/main" class="header__logo">MARCHENKO</a>
         <div class="header__search-bar">
-          <input type="text" id="search-bar" placeholder="What can I help you with today?" (input)="request($event)">
-          <a (click)="find()"><img alt="alt" class="search-icon"
+          <input type="text" id="search-bar" placeholder="What can I help you with today?" (input)="request($event)" (keyup.enter)="searchBook()">
+          <a (click)="searchBook()"><img alt="alt" class="search-icon"
                                          src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
         </div>
         <button id="btn" (click)="open()" data-modal-target="#modal"> {{ buttonText }}</button>
